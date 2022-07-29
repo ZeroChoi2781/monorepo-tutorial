@@ -1,0 +1,11 @@
+{
+	"name": "root",
+	"private": true,
+	"scripts": {
+		"build": "lerna run build",
+		"publish": "lerna publish from-package --y --no-verify-access"
+	},
+	"devDependencies": {
+		"lerna": "^4.0.0"
+	}
+}
