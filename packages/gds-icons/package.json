@@ -11,5 +11,9 @@
 		"type": "git",
 		"url": "https://github.com/ZeroChoi2781/monorepo-tutorial.git",
 		"directory": "packages/gds-icons"
+	},
+	"dependencies": {
+		"react": "^16.13.1",
+		"react-icon-base": "^2.1.2"
 	}
 }

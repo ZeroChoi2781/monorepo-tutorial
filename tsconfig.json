@@ -16,8 +16,7 @@
 		"baseUrl": ".",
 		"paths": {
 			"@/*": ["packages/*"],
-			"@sample-one/*": ["sample-one/*"],
-			"@sample-two/*": ["sample-two/*"]
+			"~/*": ["src/*"]
 		},
 		"plugins": [
 			{ "transform": "typescript-transform-paths" },
