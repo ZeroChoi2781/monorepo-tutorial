@@ -20,9 +20,9 @@ jobs:
         with:
           node-version: 12.18.0
       - name: Install Dependencies
-        run: npm install
+        run: yarn install
       - name: Deploy new Package
-        run: npm run publish
+        run: yarn run publish
         env:
           GH_TOKEN: ${{ secrets.PACKAGE_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.PACKAGE_TOKEN }}
