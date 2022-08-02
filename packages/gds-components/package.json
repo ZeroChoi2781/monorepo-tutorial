@@ -11,6 +11,5 @@
 		"type": "git",
 		"url": "https://github.com/ZeroChoi2781/monorepo-tutorial.git",
 		"directory": "packages/gds-components"
-	},
-	"gitHead": "b36bcab54e983e36bfd55a7963949a4688b4ce47"
+	}
 }

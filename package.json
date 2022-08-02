@@ -13,8 +13,7 @@
 		"classnames": "^2.2.6",
 		"prop-types": "^15.7.2",
 		"react": "^16.13.1",
-		"react-dom": "^16.13.1",
-		"react-icon-base": "^2.1.2"
+		"react-dom": "^16.13.1"
 	},
 	"devDependencies": {
 		"@babel/cli": "7.10.5",
@@ -28,7 +27,6 @@
 		"@rollup/plugin-node-resolve": "^8.4.0",
 		"@svgr/rollup": "^6.3.1",
 		"@types/react": "^18.0.15",
-		"@types/react-icon-base": "^2.1.4",
 		"lerna": "^4.0.0",
 		"read-pkg-up": "7.0.1",
 		"rollup": "^2.73.0",

@@ -14,5 +14,8 @@
 	},
 	"dependencies": {
 		"react-icon-base": "^2.1.2"
+	},
+	"devDependencies": {
+		"@types/react-icon-base": "^2.1.4"
 	}
 }
