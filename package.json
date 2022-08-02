@@ -6,7 +6,8 @@
 	],
 	"scripts": {
 		"build": "lerna run build",
-		"publish": "lerna publish from-package --y --no-verify-access"
+		"publish": "lerna publish from-package --y --no-verify-access",
+		"clean": "rm -rf node_modules && rm -f yarn.lock && lerna clean -y && yarn cache clean"
 	},
 	"dependencies": {
 		"classnames": "^2.2.6",
@@ -16,19 +17,23 @@
 		"react-icon-base": "^2.1.2"
 	},
 	"devDependencies": {
-		"@types/react": "^18.0.15",
 		"@babel/cli": "7.10.5",
 		"@babel/core": "7.11.1",
 		"@babel/plugin-transform-runtime": "^7.18.9",
 		"@babel/preset-env": "^7.18.9",
+		"@babel/preset-react": "^7.18.6",
 		"@babel/preset-typescript": "^7.18.6",
 		"@rollup/plugin-babel": "5.1.0",
 		"@rollup/plugin-commonjs": "14.0.0",
 		"@rollup/plugin-node-resolve": "^8.4.0",
+		"@svgr/rollup": "^6.3.1",
+		"@types/react": "^18.0.15",
 		"lerna": "^4.0.0",
 		"read-pkg-up": "7.0.1",
 		"rollup": "^2.73.0",
+		"rollup-plugin-json": "^4.0.0",
 		"rollup-plugin-peer-deps-external": "2.2.3",
+		"rollup-plugin-url": "^3.0.1",
 		"typescript": "^4.6.4"
 	}
 }
