@@ -1,0 +1,16 @@
+{
+	"name": "@zerochoi2781/gds-components",
+	"version": "1.0.1",
+	"main": "dist/cjs/index.js",
+	"module": "dist/esm/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "rm -rf dist && NODE_ENV=production rollup -c ../../rollup.config.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ZeroChoi2781/monorepo-tutorial.git",
+		"directory": "packages/gds-components"
+	},
+	"gitHead": "b36bcab54e983e36bfd55a7963949a4688b4ce47"
+}
