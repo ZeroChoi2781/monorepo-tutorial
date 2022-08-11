@@ -1,0 +1,17 @@
+// alias.js 도 함께 수정할 것
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"jsx": "react",
+		"paths": {
+			// global
+			"_constants/*": ["./constants/*"],
+			// packages src
+			"_components": ["./packages/gds-components/src/index.js"],
+			"_icons/*": ["./packages/gds-icons/src/*"],
+			"_charts": ["./packages/gds-charts/src/index.js"],
+			// etc
+			"_libs/reactstrap/*": ["./libs/reactstrap/*"]
+		}
+	}
+}

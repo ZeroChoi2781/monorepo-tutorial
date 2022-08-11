@@ -1,6 +1,65 @@
 {
-	"packages": ["packages/*"],
-	"version": "independent",
-	"npmClient": "yarn",
-	"useWorkspaces": true
+  "version": "independent",
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "packages": [
+    "packages/*"
+  ],
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "registry": "https://npm.pkg.github.com",
+      "allowBranch": "develop"
+    },
+    "version": {
+      "conventionalCommits": true,
+      "changelogPreset": {
+        "name": "conventional-changelog-conventionalcommits",
+        "types": [
+          {
+            "type": "feat",
+            "section": "New Features",
+            "hidden": false
+          },
+          {
+            "type": "fix",
+            "section": "Bug Fix",
+            "hidden": false
+          },
+          {
+            "type": "docs",
+            "section": "Documentation",
+            "hidden": false
+          },
+          {
+            "type": "style",
+            "section": "Styling",
+            "hidden": false
+          },
+          {
+            "type": "refactor",
+            "section": "Code Refactoring",
+            "hidden": false
+          },
+          {
+            "type": "build",
+            "section": "Build System",
+            "hidden": false
+          },
+          {
+            "type": "chore",
+            "section": "Other",
+            "hidden": false
+          }
+        ],
+        "issuePrefixes": [
+          "#"
+        ],
+        "issueUrlFormat": "{{host}}/{{owner}}/{{repository}}/issues/{{id}}",
+        "commitUrlFormat": "{{host}}/{{owner}}/{{repository}}/commit/{{hash}}",
+        "compareUrlFormat": "{{host}}/{{owner}}/{{repository}}/compare/{{previousTag}}...{{currentTag}}",
+        "userUrlFormat": "{{host}}/{{user}}"
+      }
+    }
+  }
 }

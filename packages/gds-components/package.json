@@ -1,15 +1,53 @@
 {
-	"name": "@zerochoi2781/gds-components",
-	"version": "1.0.2",
+	"name": "@goorm-dev/gds-components",
+	"version": "0.0.4",
+	"description": "GDS Components",
+	"author": "goorm",
+	"keyword": "goorm",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/goorm-dev/gds.git",
+		"directory": "packages/components"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	},
 	"main": "dist/cjs/index.js",
-	"module": "dist/esm/index.js",
-	"types": "dist/index.d.ts",
+	"module": "dist/esm",
+	"types": "dist/esm/index.d.ts",
+	"sideEffects": false,
+	"src": "./src",
+	"browserslist": [
+		">1%",
+		"last 4 versions",
+		"Firefox ESR",
+		"not ie < 9"
+	],
 	"scripts": {
 		"build": "rm -rf dist && NODE_ENV=production rollup -c ../../rollup.config.js"
 	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/ZeroChoi2781/monorepo-tutorial.git",
-		"directory": "packages/gds-components"
+	"engines": {
+		"node": ">=10.15.1"
+	},
+	"dependencies": {
+		"@loadable/component": "^5.15.0",
+		"react-calendar": "^3.4.0",
+		"react-icon-base": "^2.1.2",
+		"react-joyride": "^2.3.2",
+		"react-lottie-player": "^1.4.1",
+		"react-resize-detector": "^5.0.6",
+		"react-table": "^7.7.0",
+		"reactstrap": "^8.5.1"
+	},
+	"peerDependencies": {
+		"@goorm-dev/gds-icons": "^0.0.9",
+		"lodash": "^4.17.21",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"reactstrap": "^8.5.1"
+	},
+	"devDependencies": {
+		"browserslist": "^4.13.0",
+		"lint-staged": "^10.2.11"
 	}
 }

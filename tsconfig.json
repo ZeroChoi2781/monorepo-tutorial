@@ -1,22 +1,31 @@
 {
 	"compilerOptions": {
-		"module": "es6",
 		"target": "es6",
+		"module": "es6",
 		"lib": ["es6", "dom", "es2016", "es2017"],
 		"sourceMap": true,
 		"esModuleInterop": true,
 		"allowJs": true,
 		"moduleResolution": "node",
-		"noImplicitAny": true,
+		"noImplicitAny": false,
 		"strictNullChecks": true,
 		"strict": true,
 		"allowSyntheticDefaultImports": true,
-		"declaration": true,
-		"emitDeclarationOnly": true,
+		"skipLibCheck": true,
+
 		"baseUrl": ".",
 		"jsx": "react",
 		"paths": {
-			"@/*": ["packages/*"]
+			"@/*": ["packages/*"],
+
+			// global
+			"_constants/*": ["./constants/*"],
+			// packages src
+			"_components": ["./packages/gds-components/src/index.js"],
+			"_icons/*": ["./packages/gds-icons/src/*"],
+			"_charts": ["./packages/gds-charts/src/index.js"],
+			// etc
+			"_libs/reactstrap/*": ["./libs/reactstrap/*"]
 		},
 		"plugins": [
 			{ "transform": "typescript-transform-paths" },
@@ -28,7 +37,7 @@
 	},
 	"exclude": [
 		"*.config.js",
-		"packages/**/node_modules",
+		"packages/**/node_modules/*.d.ts",
 		"node_modules",
 		"**/dist/**/*"
 	]

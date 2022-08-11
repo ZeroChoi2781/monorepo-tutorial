@@ -1,0 +1,17 @@
+.Alert{
+	display: flex;
+	align-items: center;
+
+	&__icon {
+		margin-right: 0.5rem;
+	}
+
+	&__children {
+		margin-top: -1px;
+		line-height: normal;
+	}
+	
+	&::before {
+		display: none;
+	}
+}
